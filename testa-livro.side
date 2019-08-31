@@ -1,0 +1,195 @@
+{
+  "id": "78b23bfc-36e2-4a24-b84e-d192d45af606",
+  "version": "2.0",
+  "name": "testa-livros",
+  "url": "https://www.submarino.com.br",
+  "tests": [{
+    "id": "f9c71332-c1c6-4c3b-bb4f-272f88285eb7",
+    "name": "Pegar livro",
+    "commands": [{
+      "id": "2de88745-506e-493e-b36e-ebaa6ae79c3b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d84df84-40af-4419-b23d-539ea1bec819",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.zion-tab-showcase-item__ColUI-h6t9fi-1:nth-child(1) .product-card__ProductName-asxtmt-10",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "5ff4dd8c-c47f-4659-8d64-6a0ffca41835",
+      "comment": "",
+      "command": "click",
+      "target": "css=.zion-tab-showcase-item__ColUI-h6t9fi-1:nth-child(1) .product-card__ProductName-asxtmt-10",
+      "targets": [
+        ["css=.zion-tab-showcase-item__ColUI-h6t9fi-1:nth-child(1) .product-card__ProductName-asxtmt-10", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/div[6]/div/div[3]/div/div[3]/div/div[2]/div/div/div/a/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Box Livro - Para Todos os Garotos Que Já Amei')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5dae8290-03bc-43d9-9f73-2db2173ae5be",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.Tr-sc-1wy23hs-3:nth-child(14) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "6207fb97-3b0c-4897-a685-3350d1ad23ed",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.Tr-sc-1wy23hs-3:nth-child(14) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0",
+      "targets": [
+        ["css=.Tr-sc-1wy23hs-3:nth-child(14) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0", "css:finder"],
+        ["xpath=//div[@id='info-section']/div[2]/section/div[2]/section/table/tbody/tr[14]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[14]/td[2]/span", "xpath:position"]
+      ],
+      "value": "nomeAutor"
+    }, {
+      "id": "c90a2f99-3042-4a93-a7c7-5b9f6a7bf74e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.Tr-sc-1wy23hs-3:nth-child(13) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0",
+      "targets": [
+        ["css=.Tr-sc-1wy23hs-3:nth-child(13) > .Td-sc-1wy23hs-5:nth-child(2) > .TextUI-sc-12tokcy-0", "css:finder"],
+        ["xpath=//div[@id='info-section']/div[2]/section/div[2]/section/table/tbody/tr[13]/td[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[13]/td[2]/span", "xpath:position"]
+      ],
+      "value": "isbnLivro"
+    }, {
+      "id": "8cd1dc60-d07f-4eb4-ae72-31a5c3436bfe",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.livrariacultura.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfaf94ea-4414-4768-a85d-090f203800af",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=Ntt-responsive",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7eadc3c4-ecdb-4f75-ab88-65c64a15a540",
+      "comment": "",
+      "command": "type",
+      "target": "id=Ntt-responsive",
+      "targets": [],
+      "value": "${isbnLivro}"
+    }, {
+      "id": "a814f857-ebd3-4ab4-936d-2e99816c2afc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-6:nth-child(3) #search-box-submit",
+      "targets": [
+        ["css=.col-sm-6:nth-child(3) #search-box-submit", "css:finder"],
+        ["xpath=(//input[@id='search-box-submit'])[2]", "xpath:attributes"],
+        ["xpath=(//form[@id='searchForm']/div/span/input)[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/form/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ae6a479-2bdb-4ba7-b8d2-82dee2e21ef4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.product-ev-unavailable:nth-child(1)",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "c3b1d4ff-841b-49f2-a8a5-4efc713cf738",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-ev-unavailable:nth-child(1)",
+      "targets": [
+        ["css=.product-ev-unavailable:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Livro - BOX - PARA TODOS OS GAROTOS QUE JÁ AMEI']", "xpath:img"],
+        ["xpath=//section[@id='results']/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "654b47cc-05c4-48cb-892b-a8f7f93496bd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=HAN, JENNY",
+      "targets": [],
+      "value": "${nomeAutor}"
+    }, {
+      "id": "52f2f5a8-dd1f-481e-819e-aacd7f7c8249",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.americanas.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecfa3e63-b395-47c6-bb47-f035b9686084",
+      "comment": "",
+      "command": "type",
+      "target": "id=h_search-input",
+      "targets": [
+        ["id=h_search-input", "id"],
+        ["name=conteudo", "name"],
+        ["css=#h_search-input", "css:finder"],
+        ["xpath=//input[@id='h_search-input']", "xpath:attributes"],
+        ["xpath=//div[@id='h_search']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${isbnLivro}"
+    }, {
+      "id": "348b4780-bf0b-4819-babd-27f522c95463",
+      "comment": "",
+      "command": "click",
+      "target": "id=h_search-btn",
+      "targets": [
+        ["id=h_search-btn", "id"],
+        ["css=#h_search-btn", "css:finder"],
+        ["xpath=//button[@id='h_search-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='h_search']/form/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5844895-7aeb-476e-8464-5779b84642ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ImageUI-sc-9rtsvr-0",
+      "targets": [
+        ["css=.ImageUI-sc-9rtsvr-0", "css:finder"],
+        ["xpath=//img[@alt='Box Livro - Para Todos os Garotos Que Já Amei']", "xpath:img"],
+        ["xpath=//div[@id='content-middle']/div[6]/div/div/div/div/div/div/div[2]/a/section/div/div/div/picture/img", "xpath:idRelative"],
+        ["xpath=//div/picture/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46d8aa56-21a8-4200-b2aa-cc041b1e17a5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.Tr-sc-6kkk7q-3:nth-child(14) > .Td-sc-6kkk7q-5:nth-child(2) > .TextUI-sc-1hrwx40-0",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "75489a88-15fe-45d1-8ba9-c08dc67c1867",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.Tr-sc-6kkk7q-3:nth-child(14) > .Td-sc-6kkk7q-5:nth-child(2) > .TextUI-sc-1hrwx40-0",
+      "targets": [],
+      "value": "${nomeAutor}"
+    }]
+  }],
+  "suites": [{
+    "id": "60164ccb-4684-47b4-b17c-f6bda2d2394a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f9c71332-c1c6-4c3b-bb4f-272f88285eb7"]
+  }],
+  "urls": ["https://www.submarino.com.br/", "https://www.americanas.com.br/"],
+  "plugins": []
+}
